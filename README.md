@@ -1,3 +1,5 @@
+[🔗 View Live Site](https://devbook1.netlify.app/)
+
 # 📘 DevBook
 
 **DevBook** is a modern, interactive learning platform for mastering full-stack web development. Built with cutting-edge technologies and a focus on clean architecture, DevBook delivers a structured, hands-on coding experience with in-depth explanations, live code previews, and best practices.
@@ -20,7 +22,7 @@
 - **Frontend:** React, React Router DOM, SCSS Modules, Framer Motion
 - **Backend (coming soon):** Node.js, Express
 - **Design:** Custom Dark Theme with modern layout
-- **Deployment:** Vercel / Netlify (optional)
+- **Deployment:** Vercel / Netlify
 
 ---
 
@@ -46,4 +48,4 @@
 
 ## 📄 License
 
-MIT © [Your Name or Brand]
+MIT © shmuel yitzhak
