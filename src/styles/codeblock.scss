@@ -1,0 +1,39 @@
+.code-block {
+  position: relative;
+  margin-bottom: 1.5rem;
+
+  .copy-btn {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+
+  pre {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  code {
+    font-family: "Fira Code", monospace;
+  }
+}

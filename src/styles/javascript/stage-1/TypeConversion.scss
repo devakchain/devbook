@@ -1,0 +1,76 @@
+/* src/styles/TypeConversion.scss */
+
+.type-conversion-container {
+  background-color: #000;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem 5vw; // ריווח פנימי צדדי
+  color: #ffffff;
+  box-sizing: border-box;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00d8ff;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #00d8ff;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    color: #00ffd5;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
+  }
+
+  .code-block {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+
+    code {
+      font-family: "Courier New", monospace;
+      color: #fff;
+    }
+  }
+
+  .live-preview {
+    background-color: #121212;
+    border-left: 4px solid #00d8ff;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #00ffae;
+  }
+
+  .back-link {
+    margin-top: 2rem;
+    a {
+      display: inline-block;
+      background-color: #00d8ff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #00b0cc;
+      }
+    }
+  }
+}

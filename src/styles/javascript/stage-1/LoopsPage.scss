@@ -1,0 +1,113 @@
+/* src/styles/javascript/stage-1/Loops.scss */
+
+.page-container {
+  padding: 2rem;
+  color: #fff;
+  background-color: #121212;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  .back-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+
+    a {
+      background-color: #1f1f1f;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #333;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #00c4ff;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #ffcc00;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+  }
+
+  ul {
+    list-style-type: square;
+    padding-right: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+
+  .code-block {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-family: "Fira Code", monospace;
+    font-size: 0.95rem;
+  }
+
+  .live-preview {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    color: #00ffae;
+    border-left: 4px solid #00d4ff;
+    font-family: "Fira Code", monospace;
+    font-size: 1rem;
+  }
+
+  strong {
+    color: #00ff99;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p,
+    li {
+      font-size: 1rem;
+    }
+
+    .back-button {
+      justify-content: center;
+    }
+  }
+}

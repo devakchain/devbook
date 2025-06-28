@@ -1,0 +1,133 @@
+.operators-page {
+  background-color: #000;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem 5vw;
+  color: #ffffff;
+  box-sizing: border-box;
+  direction: ltr; // כל התוכן מיושר שמאלה
+
+  // כפתור חזור – מוצב בימין למעלה
+  .back-link {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+
+    button {
+      background-color: #00d8ff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #00b0cc;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00d8ff;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #00d8ff;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    color: #00ffd5;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
+  }
+
+  ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.5;
+
+      code {
+        background-color: #1e1e1e;
+        padding: 0.2rem 0.5rem;
+        border-radius: 6px;
+        color: #00ff99;
+      }
+    }
+  }
+
+  .code-block {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+
+    code {
+      font-family: "Courier New", monospace;
+      color: #ffffff;
+    }
+  }
+
+  .live-preview {
+    background-color: #121212;
+    border-left: 4px solid #00d8ff;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #00ffae;
+  }
+
+  .live-preview {
+    background-color: #121212;
+    border-right: 4px solid #00d8ff;
+    padding: 1.2rem 1.5rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #00ffae;
+
+    h3 {
+      color: #00ffd5;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    ul {
+      padding-right: 1.5rem;
+
+      li {
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+        font-size: 1.05rem;
+        color: #e0ffe0;
+
+        span {
+          color: #00b0ff;
+          font-weight: normal;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}

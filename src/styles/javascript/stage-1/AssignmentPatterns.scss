@@ -1,0 +1,27 @@
+.js-page {
+  background-color: #0d1117;
+  color: #ffffff;
+  padding: 2rem;
+  min-height: 100vh;
+
+  .back-button {
+    background: none;
+    border: 1px solid #ccc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+}

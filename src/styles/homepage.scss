@@ -1,0 +1,72 @@
+.homepage {
+  min-height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    padding-top: 80px;
+  }
+
+  .homepage-intro {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    color: #cccccc;
+
+    @media (max-width: 600px) {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.topics-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.topic-card {
+  background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00ff99;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 255, 153, 0.4);
+    background: linear-gradient(135deg, #222, #333);
+  }
+
+  @media (max-width: 600px) {
+    padding: 1.5rem 1rem;
+
+    .icon {
+      font-size: 2rem;
+    }
+  }
+}

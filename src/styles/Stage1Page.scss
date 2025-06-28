@@ -1,0 +1,39 @@
+.stage1 {
+  min-height: 100vh;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 3rem 2rem;
+  font-family: "Segoe UI", sans-serif;
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+
+    .topic-card {
+      background-color: #292929;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid #333;
+      transition: 0.3s ease;
+
+      h2 {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      &:hover {
+        background-color: #333;
+        transform: translateY(-4px);
+      }
+    }
+  }
+}

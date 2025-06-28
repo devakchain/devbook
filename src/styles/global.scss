@@ -1,0 +1,52 @@
+/* src/styles/global.scss */
+
+@import "./homepage.scss";
+@import "./navbar.scss";
+@import "./codeblock.scss";
+@import "./javascript.scss";
+@import "./liveoutput.scss";
+@import "./Stage1Page.scss";
+
+// Stage 1
+@import "./javascript/stage-1/DataTypes.scss";
+@import "./javascript/stage-1/TypeConversion.scss";
+@import "./javascript/stage-1/variables.scss";
+@import "./javascript/stage-1/LoopsPage.scss";
+@import "./javascript/stage-1/Conditionals.scss";
+@import "./javascript/stage-1/OperatorsPage.scss";
+@import "./javascript/stage-1/DestructuringPage.scss";
+@import "./javascript/stage-1/ScopePage.scss";
+@import "./javascript/stage-1/AssignmentPatterns.scss";
+
+// Stage 2
+@import "./javascript/stage-2/FunctionTypes.scss";
+@import "./javascript/stage-2/FunctionHoistingPage.scss";
+@import "./javascript/stage-2/IIFEPage.scss";
+@import "./javascript/stage-2/ThisKeywordPage.scss";
+@import "./javascript/stage-2/DefaultParameters.scss";
+@import "./javascript/stage-2/ClosuresPage.scss";
+@import "./javascript/stage-2/CallbackFunctionsPage.scss";
+@import "./javascript/stage-2/ArgumentsObject.scss";
+
+// עיצוב כללי לתמיכה רספונסיבית ומבנה עמודים
+html,
+body,
+#root {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: auto;
+  overflow-y: auto !important;
+}
+
+// מרווח קבוע מתחת ל־Navbar
+.page-content {
+  padding-top: 100px;
+
+  @media (max-width: 768px) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 70px;
+  }
+}
