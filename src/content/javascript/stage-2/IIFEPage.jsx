@@ -48,28 +48,30 @@ function IIFEPage() {
             </ul>
 
             <h2>📊 מתי נשתמש ב-IIFE?</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>שימוש</th>
-                  <th>למה?</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Scope מבודד</td>
-                  <td>להימנע מזיהום ה-scope הגלובלי</td>
-                </tr>
-                <tr>
-                  <td>הגנה על משתנים</td>
-                  <td>משתנים בתוך IIFE אינם נגישים מבחוץ</td>
-                </tr>
-                <tr>
-                  <td>הרצה מיידית</td>
-                  <td>יש צורך בפונקציה שתופעל מיד עם טעינת הסקריפט</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>שימוש</th>
+                    <th>למה?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Scope מבודד</td>
+                    <td>להימנע מזיהום ה-scope הגלובלי</td>
+                  </tr>
+                  <tr>
+                    <td>הגנה על משתנים</td>
+                    <td>משתנים בתוך IIFE אינם נגישים מבחוץ</td>
+                  </tr>
+                  <tr>
+                    <td>הרצה מיידית</td>
+                    <td>יש צורך בפונקציה שתופעל מיד עם טעינת הסקריפט</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <h2>⚠️ טעויות נפוצות</h2>
             <ul>

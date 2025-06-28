@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../../../styles/javascript.scss";
+import "../../../styles/Stage1Page.scss";
 
 const topics = [
   { title: "Variables", path: "/javascript/stage-1/variables" },
@@ -25,7 +26,7 @@ function Stage1Page() {
 
   return (
     <div className="js-page">
-      <p className="page-subtitle">
+      <p className="page-subtitle margin">
         Explore the core building blocks of JavaScript in a logical learning
         order.
       </p>

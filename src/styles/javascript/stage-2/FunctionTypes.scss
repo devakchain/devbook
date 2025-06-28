@@ -90,3 +90,40 @@
     }
   }
 }
+
+// ✅ הפוך כל section לגמיש ורספונסיבי
+.code-demo,
+.note {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  box-shadow: 0 6px 14px rgba(0, 216, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .code-demo,
+  .note {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .stage-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .page-subtitle {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+}

@@ -27,7 +27,7 @@ function FunctionsPage() {
 
   return (
     <div className="js-page">
-      <p className="page-subtitle">
+      <p className="page-subtitle margin">
         Dive deep into JavaScript functions and how they interact with memory,
         context, and scope.
       </p>

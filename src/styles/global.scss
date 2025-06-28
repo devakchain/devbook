@@ -29,6 +29,19 @@
 @import "./javascript/stage-2/ArgumentsObject.scss";
 
 // עיצוב כללי לתמיכה רספונסיבית ומבנה עמודים
+
+:root {
+  --navbar-height: 100px;
+
+  @media (max-width: 768px) {
+    --navbar-height: 80px;
+  }
+
+  @media (max-width: 480px) {
+    --navbar-height: 70px;
+  }
+}
+
 html,
 body,
 #root {
@@ -36,6 +49,7 @@ body,
   overflow-x: hidden;
   scroll-behavior: auto;
   overflow-y: auto !important;
+  overflow: scroll;
 }
 
 // מרווח קבוע מתחת ל־Navbar

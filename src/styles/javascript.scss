@@ -1,13 +1,5 @@
-.page-content {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
 .js-page {
-  padding: 6rem 3rem 3rem;
+  padding: 6rem 2rem 3rem;
   background-color: #0d1117;
   color: #ffffff;
   font-family: "Inter", sans-serif;
@@ -15,6 +7,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
   justify-content: center;
 }
 
@@ -24,6 +19,8 @@
   color: #c9d1d9;
   margin-bottom: 2.5rem;
   text-align: center;
+  line-height: 1.6;
+  word-wrap: break-word;
 }
 
 // גריד שלבים
@@ -34,6 +31,7 @@
   width: 100%;
   max-width: 1100px;
   padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .stage-card {
@@ -45,7 +43,7 @@
   transition: all 0.2s ease;
 
   .stage-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     text-align: center;
@@ -63,7 +61,6 @@
   }
 }
 
-// כפתור חזור
 .back-button {
   margin-top: 3rem;
   background-color: #21262d;
@@ -82,26 +79,28 @@
   }
 }
 
-// ✨ עטיפת טבלה – לרספונסיביות
 .table-wrapper {
   overflow-x: auto;
+  width: 100%;
   max-width: 100%;
   margin: 2rem 0;
   border-radius: 8px;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
 }
 
-// טבלאות
+/* שיפור – הטבלה לא תחרוג */
 table {
   width: 100%;
   border-collapse: collapse;
   font-size: 1rem;
+  min-width: 600px; // ✅ נדרש כדי לאפשר גלילה אופקית כשהמסך צר
 
   th,
   td {
     padding: 0.75rem 1rem;
     border: 1px solid #333;
     text-align: right;
-    min-width: 160px;
   }
 
   tr:nth-child(even) {
@@ -119,35 +118,42 @@ table {
   }
 }
 
-// ✅ רספונסיביות
+/* תיקונים למובייל */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 0.9rem;
+    min-width: 600px; // ✅ נשמר במובייל עבור גלילה
+  }
+
+  table th,
+  table td {
+    padding: 0.6rem 0.8rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .js-page {
-    padding: 5rem 1.5rem 2rem;
+    padding: 5rem 1rem 2rem;
   }
 
   .stage-grid {
     grid-template-columns: 1fr;
+    padding: 0;
   }
 
   .back-button {
     font-size: 0.95rem;
   }
-
-  table th,
-  table td {
-    font-size: 0.9rem;
-    padding: 0.6rem 0.8rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
   .page-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-bottom: 2rem;
   }
 
   .stage-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .stage-label {
@@ -158,5 +164,9 @@ table {
     width: 100%;
     padding: 0.6rem;
     font-size: 0.9rem;
+  }
+  .stage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
   }
 }

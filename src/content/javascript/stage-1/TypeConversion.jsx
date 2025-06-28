@@ -106,41 +106,43 @@ false`;
 
           <section className="explanation rtl">
             <h2>📊 טבלת סיכום – הבדלים עיקריים</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>מאפיין</th>
-                  <th>Type Conversion</th>
-                  <th>Type Coercion</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>יזום על ידי</td>
-                  <td>המפתח</td>
-                  <td>JavaScript (המנוע)</td>
-                </tr>
-                <tr>
-                  <td>שליטה</td>
-                  <td>מלאה</td>
-                  <td>לא צפוי תמיד</td>
-                </tr>
-                <tr>
-                  <td>דוגמה</td>
-                  <td>
-                    <code>Number("5")</code>
-                  </td>
-                  <td>
-                    <code>"5" * 1</code>
-                  </td>
-                </tr>
-                <tr>
-                  <td>שימושי עבור</td>
-                  <td>קלט משתמש, ניתוח נתונים</td>
-                  <td>השוואות, חישובים לא מדויקים</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>מאפיין</th>
+                    <th>Type Conversion</th>
+                    <th>Type Coercion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>יזום על ידי</td>
+                    <td>המפתח</td>
+                    <td>JavaScript (המנוע)</td>
+                  </tr>
+                  <tr>
+                    <td>שליטה</td>
+                    <td>מלאה</td>
+                    <td>לא צפוי תמיד</td>
+                  </tr>
+                  <tr>
+                    <td>דוגמה</td>
+                    <td>
+                      <code>Number("5")</code>
+                    </td>
+                    <td>
+                      <code>"5" * 1</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>שימושי עבור</td>
+                    <td>קלט משתמש, ניתוח נתונים</td>
+                    <td>השוואות, חישובים לא מדויקים</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
 
           <section className="note rtl">

@@ -10,7 +10,7 @@ import {
   FaDatabase,
   FaGithub,
 } from "react-icons/fa";
-import { BiPlusCircle } from "react-icons/bi";
+import { SiTypescript } from "react-icons/si"; // ← הוספנו את סמל TypeScript
 
 const topics = [
   { name: "JavaScript", path: "/javascript", icon: <FaCode /> },
@@ -20,7 +20,7 @@ const topics = [
   { name: "Node.js", path: "/node", icon: <FaNodeJs /> },
   { name: "MongoDB", path: "/mongodb", icon: <FaDatabase /> },
   { name: "Git & GitHub", path: "/git", icon: <FaGithub /> },
-  { name: "עוד...", path: "/more", icon: <BiPlusCircle /> },
+  { name: "TypeScript", path: "/typescript", icon: <SiTypescript /> }, // ← כאן הסמל האמיתי
 ];
 
 function HomePage() {

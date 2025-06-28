@@ -1,3 +1,14 @@
+.page-content {
+  margin-top: 5rem;
+
+  @media (max-width: 768px) {
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 3rem;
+  }
+}
 .back-button {
   display: inline-block;
   background-color: #1f1f1f;

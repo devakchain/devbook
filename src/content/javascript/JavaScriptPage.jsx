@@ -48,7 +48,7 @@ function JavaScriptPage() {
 
   return (
     <div className="js-page">
-      <p className="page-subtitle">
+      <p className="page-subtitle margin">
         Master each stage of JavaScript, step by step.
       </p>
 

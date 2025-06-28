@@ -42,64 +42,64 @@ object
 function`;
 
   return (
-    <div className="page-content">
-      <div className="js-page">
-        <button className="back-button" onClick={() => navigate(-1)}>
-          ← חזור
-        </button>
+    <div className="js-page page-content">
+      <button className="back-button" onClick={() => navigate(-1)}>
+        ← חזור
+      </button>
 
-        <p className="page-subtitle rtl">
-          JavaScript כוללת סוגי נתונים פרימיטיביים ורפרנסיים – כל אחד מתנהג אחרת
-          בזיכרון ובשימוש. שליטה בהם קריטית להבנת השפה לעומק.
-        </p>
+      <p className="page-subtitle rtl">
+        JavaScript כוללת סוגי נתונים פרימיטיביים ורפרנסיים – כל אחד מתנהג אחרת
+        בזיכרון ובשימוש. שליטה בהם קריטית להבנת השפה לעומק.
+      </p>
 
-        <div className="topic-content">
-          <h1 className="stage-title">Data Types – סוגי נתונים</h1>
+      <div className="topic-content">
+        <h1 className="stage-title">Data Types – סוגי נתונים</h1>
 
-          {/* תיאוריה כללית */}
-          <section className="explanation rtl">
-            <h2>📚 סוגי נתונים בפרימיטיב לעומת רפרנס</h2>
-            <p>
-              קיימת הבחנה בין <strong>Primitive Types</strong> לבין{" "}
-              <strong>Reference Types</strong>:
-            </p>
-            <ul>
-              <li>
-                <strong>Primitive:</strong> נשמרים כערך ישיר בזיכרון. כוללים:
-                <code>
-                  String, Number, Boolean, Null, Undefined, Symbol, BigInt
-                </code>
-              </li>
-              <li>
-                <strong>Reference:</strong> נשמרים ככתובת בזיכרון, מפנים למבנים
-                מורכבים:
-                <code>Object, Array, Function</code>
-              </li>
-            </ul>
+        {/* תיאוריה כללית */}
+        <section className="explanation rtl">
+          <h2>📚 סוגי נתונים בפרימיטיב לעומת רפרנס</h2>
+          <p>
+            קיימת הבחנה בין <strong>Primitive Types</strong> לבין{" "}
+            <strong>Reference Types</strong>:
+          </p>
+          <ul>
+            <li>
+              <strong>Primitive:</strong> נשמרים כערך ישיר בזיכרון. כוללים:
+              <code>
+                String, Number, Boolean, Null, Undefined, Symbol, BigInt
+              </code>
+            </li>
+            <li>
+              <strong>Reference:</strong> נשמרים ככתובת בזיכרון, מפנים למבנים
+              מורכבים:
+              <code>Object, Array, Function</code>
+            </li>
+          </ul>
 
-            <h2>🧠 איך typeof מתנהג?</h2>
-            <p>
-              הפונקציה <code>typeof</code> משמשת לבדוק סוג נתון, אך לא תמיד היא
-              מדויקת:
-            </p>
-            <ul>
-              <li>
-                <code>typeof null === "object"</code> – טעות היסטורית בשפה
-              </li>
-              <li>
-                <code>typeof [] === "object"</code> – לכן עדיף להשתמש ב־
-                <code>Array.isArray()</code>
-              </li>
-              <li>
-                <code>typeof function() &#123;&#125; === "function"</code> – זה
-                המקרה היחיד שמחזיר "function"
-              </li>
-            </ul>
-          </section>
+          <h2>🧠 איך typeof מתנהג?</h2>
+          <p>
+            הפונקציה <code>typeof</code> משמשת לבדוק סוג נתון, אך לא תמיד היא
+            מדויקת:
+          </p>
+          <ul>
+            <li>
+              <code>typeof null === "object"</code> – טעות היסטורית בשפה
+            </li>
+            <li>
+              <code>typeof [] === "object"</code> – לכן עדיף להשתמש ב־
+              <code>Array.isArray()</code>
+            </li>
+            <li>
+              <code>typeof function() &#123;&#125; === "function"</code> – זה
+              המקרה היחיד שמחזיר "function"
+            </li>
+          </ul>
+        </section>
 
-          {/* טבלה תיאורטית */}
-          <section className="explanation rtl">
-            <h2>📊 טבלת סיכום – פרימיטיביים</h2>
+        {/* טבלה תיאורטית */}
+        <section className="explanation rtl">
+          <h2>📊 טבלת סיכום – פרימיטיביים</h2>
+          <div className="table-wrapper">
             <table>
               <thead>
                 <tr>
@@ -170,36 +170,36 @@ function`;
                 </tr>
               </tbody>
             </table>
-          </section>
+          </div>
+        </section>
 
-          {/* דוגמת קוד */}
-          <section className="code-demo">
-            <h2>🧪 דוגמת קוד מלאה</h2>
-            <CodeBlock code={code} language="javascript" />
-            <LiveOutput result={result} />
-          </section>
+        {/* דוגמת קוד */}
+        <section className="code-demo">
+          <h2>🧪 דוגמת קוד מלאה</h2>
+          <CodeBlock code={code} language="javascript" />
+          <LiveOutput result={result} />
+        </section>
 
-          {/* טיפים */}
-          <section className="note rtl">
-            <h2>💡 טיפים חשובים</h2>
-            <ul>
-              <li>
-                <code>null</code> משמש לאיפוס ערכים ידני, <code>undefined</code>{" "}
-                מציין חוסר ערך
-              </li>
-              <li>
-                <code>Symbol</code> מבטיח ייחודיות – שני Symbols לעולם לא שווים
-              </li>
-              <li>
-                בדוק אם מערך עם <code>Array.isArray()</code> – לא עם typeof
-              </li>
-              <li>
-                אל תשתמש ב־<code>BigInt</code> אם אתה צריך להשתמש בפונקציות Math
-                רגילות
-              </li>
-            </ul>
-          </section>
-        </div>
+        {/* טיפים */}
+        <section className="note rtl">
+          <h2>💡 טיפים חשובים</h2>
+          <ul>
+            <li>
+              <code>null</code> משמש לאיפוס ערכים ידני, <code>undefined</code>{" "}
+              מציין חוסר ערך
+            </li>
+            <li>
+              <code>Symbol</code> מבטיח ייחודיות – שני Symbols לעולם לא שווים
+            </li>
+            <li>
+              בדוק אם מערך עם <code>Array.isArray()</code> – לא עם typeof
+            </li>
+            <li>
+              אל תשתמש ב־<code>BigInt</code> אם אתה צריך להשתמש בפונקציות Math
+              רגילות
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
   );

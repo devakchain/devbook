@@ -42,7 +42,7 @@ function DataStructuresPage() {
 
   return (
     <div className="js-page">
-      <p className="page-subtitle">
+      <p className="page-subtitle margin">
         Explore how JavaScript organizes, stores, and manipulates data using
         objects, arrays, sets, and maps.
       </p>
