@@ -1,0 +1,22 @@
+.copy-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  .icon {
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    background-color: #333;
+    color: #6cf;
+  }
+}
